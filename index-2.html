@@ -1,0 +1,868 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>お弁当 故里（ふるさと）｜仙台・川内の手作り唐揚げ弁当</title>
+<meta name="description" content="仙台市青葉区川内の手作りお弁当屋さん「お弁当 故里」。看板メニューは唐揚げ弁当！川内駅・東北大学からすぐ。店頭・電話で注文OK、部活やイベントの大量注文も承ります。営業時間 9:30〜20:30 年中無休。">
+<meta property="og:title" content="お弁当 故里｜川内の手作りお弁当屋さん">
+<meta property="og:description" content="看板メニューは唐揚げ！川内駅・東北大学からすぐ。大量注文も承ります。">
+<meta property="og:image" content="images/karaage-futsu.jpg">
+<meta property="og:type" content="website">
+<link rel="alternate" hreflang="ja" href="?lang=ja">
+<link rel="alternate" hreflang="zh-Hans" href="?lang=zh">
+<link rel="alternate" hreflang="en" href="?lang=en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zen+Maru+Gothic:wght@500;700;900&family=Noto+Sans+SC:wght@500;700;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "お弁当 故里",
+  "alternateName": "Bento Furusato",
+  "servesCuisine": "弁当",
+  "telephone": "022-222-1697",
+  "priceRange": "￥1～1,000",
+  "paymentAccepted": "Cash",
+  "image": "images/storefront.jpg",
+  "sameAs": ["https://www.instagram.com/bento_furusato/"],
+  "address": {
+    "@type": "PostalAddress",
+    "postalCode": "980-0866",
+    "addressRegion": "宮城県",
+    "addressLocality": "仙台市青葉区",
+    "streetAddress": "川内三十人町44-11 ハッピー館",
+    "addressCountry": "JP"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "09:30",
+    "closes": "20:30"
+  }]
+}
+</script>
+<style>
+:root{
+  --yellow:#ffe94d;
+  --yellow-soft:#fff6b8;
+  --red:#d7263d;
+  --red-dark:#a8162b;
+  --green:#2f9e2f;
+  --ink:#1c1a17;
+  --paper:#fffdf5;
+  --line:#e9dfb8;
+  --muted:#6b6455;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;
+  font-weight:500;line-height:1.7;-webkit-font-smoothing:antialiased;
+}
+html:lang(zh) body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+.display{font-family:"Dela Gothic One","Zen Maru Gothic",sans-serif;font-weight:400;letter-spacing:.02em}
+html:lang(zh) .display{font-family:"Noto Sans SC",sans-serif;font-weight:900}
+html:lang(en) .display{letter-spacing:0}
+
+/* notice */
+.notice{background:#fff;color:var(--ink);border-bottom:3px solid var(--red);font-size:13px;font-weight:700;text-align:center;padding:8px 16px;line-height:1.5}
+.notice b{color:var(--red)}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.logo{display:flex;align-items:baseline;gap:8px;text-decoration:none;white-space:nowrap}
+.logo small{font-size:12px;font-weight:700;color:var(--yellow)}
+.logo span{font-family:"Dela Gothic One",sans-serif;font-size:26px;line-height:1}
+nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;font-weight:700;font-size:15px}
+nav a{text-decoration:none;white-space:nowrap}
+nav a:hover{color:var(--yellow)}
+.head-right{display:flex;align-items:center;gap:10px}
+.lang{display:flex;border:2px solid #4a453d;border-radius:999px;overflow:hidden}
+.lang button{font:inherit;font-size:13px;font-weight:700;background:none;color:#cfc8b6;border:0;padding:4px 10px;cursor:pointer;line-height:1.4}
+.lang button[aria-pressed="true"]{background:var(--yellow);color:var(--ink)}
+.tel-btn{
+  display:inline-flex;align-items:center;gap:6px;background:var(--red);color:#fff;
+  text-decoration:none;font-weight:900;padding:8px 14px;border-radius:999px;white-space:nowrap;font-size:15px
+}
+.tel-btn:hover{background:var(--red-dark)}
+.tel-btn svg{width:16px;height:16px;flex:none}
+@media (max-width:980px){nav{display:none}}
+@media (max-width:560px){
+  .logo small{display:none}
+  .logo span{font-size:22px}
+  .tel-btn{padding:8px 10px}
+  .tel-btn .num{display:none}
+  .lang button{padding:4px 8px}
+}
+
+/* hero */
+.hero{background:var(--yellow);position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;align-items:center;gap:32px;padding-top:48px;padding-bottom:56px}
+.hero .kicker{display:inline-block;background:var(--ink);color:var(--yellow);font-weight:900;padding:4px 14px;border-radius:999px;font-size:14px}
+.hero h1{margin:14px 0 6px;font-size:clamp(44px,8vw,84px);line-height:1.05;font-family:"Dela Gothic One",sans-serif;font-weight:400}
+.hero h1 .ruby{display:block;font-family:"Zen Maru Gothic",sans-serif;font-weight:900;font-size:clamp(16px,2.4vw,22px);letter-spacing:.6em;color:var(--red)}
+html:not(:lang(ja)) .hero h1 .ruby{letter-spacing:.08em}
+.hero .lead{font-size:clamp(17px,2.2vw,21px);font-weight:700;margin:14px 0 22px}
+.hero .lead strong{color:var(--red);font-weight:900}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:900;text-decoration:none;padding:14px 22px;border-radius:14px;font-size:17px;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink);transition:transform .1s,box-shadow .1s}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
+.btn-red{background:var(--red);color:#fff}
+.btn-white{background:#fff;color:var(--ink)}
+.btn svg{width:20px;height:20px;flex:none}
+.hero-photo{position:relative}
+.hero-photo img{height:auto;border-radius:24px;border:4px solid var(--ink);box-shadow:10px 10px 0 var(--ink);aspect-ratio:1/1;object-fit:cover;width:100%}
+.badge{
+  position:absolute;top:-18px;left:-18px;width:112px;height:112px;border-radius:50%;
+  background:var(--red);color:#fff;display:grid;place-items:center;text-align:center;
+  font-weight:900;line-height:1.15;border:4px solid var(--ink);transform:rotate(-12deg);font-size:15px
+}
+.badge b{font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:26px;display:block}
+.hero-points{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;padding:0;list-style:none}
+.hero-points li{background:#fff;border:2px solid var(--ink);border-radius:999px;padding:4px 12px;font-weight:700;font-size:14px}
+@media (max-width:760px){
+  .hero .wrap{grid-template-columns:1fr;padding-top:32px;padding-bottom:44px}
+  .hero-photo{order:-1;max-width:420px;margin:12px auto 0;width:calc(100% - 12px)}
+  .badge{width:92px;height:92px;font-size:13px;left:-8px;top:-12px}
+  .badge b{font-size:21px}
+  .btn{flex:1 1 auto;justify-content:center}
+}
+
+/* sections */
+section{padding:72px 0}
+.sec-title{text-align:center;margin:0 0 36px}
+.sec-title .en{display:block;color:var(--red);font-weight:900;letter-spacing:.2em;font-size:13px}
+.sec-title h2{margin:4px 0 0;font-size:clamp(28px,4.4vw,40px);line-height:1.25}
+.sec-title p{margin:10px auto 0;color:var(--muted);max-width:620px}
+
+/* popular */
+.popular-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.pop-card{background:#fff;border:3px solid var(--ink);border-radius:20px;overflow:hidden;box-shadow:6px 6px 0 var(--ink);display:flex;flex-direction:column}
+.pop-card figure{margin:0;position:relative}
+.pop-card img{aspect-ratio:1/1;object-fit:cover;width:100%;height:auto}
+.rank{position:absolute;top:12px;left:12px;background:var(--ink);color:var(--yellow);font-weight:900;padding:4px 12px;border-radius:999px;font-size:14px}
+.rank.no1{background:var(--red);color:#fff}
+.pop-body{padding:16px 18px 20px}
+.pop-body h3{margin:0;font-size:21px}
+.pop-body p{margin:6px 0 0;color:var(--muted);font-size:15px}
+.price{font-family:"Dela Gothic One",sans-serif;color:var(--red);font-size:24px;margin-top:8px;display:block}
+.price small{font-family:"Zen Maru Gothic",sans-serif;font-weight:700;font-size:13px;color:var(--muted);margin-left:4px}
+@media (max-width:860px){.popular-grid{grid-template-columns:1fr;max-width:460px;margin:0 auto}}
+
+.flavors{margin-top:48px;background:var(--yellow-soft);border:3px dashed var(--ink);border-radius:20px;padding:24px}
+.flavors h3{margin:0 0 4px;font-size:22px;text-align:center}
+.flavors > p{text-align:center;margin:0 0 16px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;list-style:none;margin:0;padding:0}
+.chips li{background:#fff;border:2px solid var(--ink);border-radius:999px;padding:4px 14px;font-weight:700}
+.chips li.hot{background:var(--red);color:#fff}
+
+/* about */
+.features{background:var(--ink);color:#fff}
+.features .sec-title .en{color:var(--yellow)}
+.features .sec-title p{color:#cfc8b6}
+.store{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center;margin-bottom:40px}
+.store figure{margin:0}
+.store img{width:100%;height:auto;border-radius:20px;border:4px solid var(--yellow)}
+.store figcaption{margin-top:8px;font-size:13px;color:#cfc8b6}
+.store h3{margin:0 0 10px;font-size:clamp(22px,3vw,28px);color:var(--yellow);line-height:1.4}
+.store p{margin:0 0 12px;color:#e8e2d2}
+@media (max-width:860px){.store{grid-template-columns:1fr}}
+.feat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.feat{background:#2a2723;border-radius:18px;padding:24px 18px;text-align:center}
+.feat .ico{width:56px;height:56px;margin:0 auto 10px;border-radius:50%;background:var(--yellow);color:var(--ink);display:grid;place-items:center}
+.feat .ico svg{width:28px;height:28px}
+.feat h3{margin:0 0 6px;font-size:18px;color:var(--yellow)}
+.feat p{margin:0;font-size:14px;color:#e8e2d2}
+@media (max-width:860px){.feat-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:420px){.feat-grid{grid-template-columns:1fr}}
+
+/* menu */
+.menu-tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:28px}
+.menu-tabs button{
+  font:inherit;font-weight:900;cursor:pointer;border:2px solid var(--ink);background:#fff;color:var(--ink);
+  border-radius:999px;padding:6px 16px;font-size:15px
+}
+.menu-tabs button[aria-pressed="true"]{background:var(--ink);color:var(--yellow)}
+.menu-grid{columns:2 420px;column-gap:28px}
+.menu-cat{break-inside:avoid;background:#fff;border:2px solid var(--line);border-radius:18px;padding:20px 22px;margin:0 0 28px}
+.menu-cat[hidden]{display:none}
+.menu-cat h3{margin:0 0 10px;font-size:22px;display:flex;align-items:center;gap:10px}
+.menu-cat h3::before{content:"";width:10px;height:26px;border-radius:4px;background:var(--red);flex:none}
+.menu-cat ul{list-style:none;margin:0;padding:0}
+.menu-cat li{display:flex;align-items:baseline;gap:8px;padding:9px 0;border-bottom:1px dashed var(--line)}
+.menu-cat li:last-child{border-bottom:0}
+.menu-cat .name{font-weight:700}
+.menu-cat .sub{display:block;font-size:12px;color:var(--muted);font-weight:500}
+.menu-cat .note{display:block;font-size:13px;color:var(--muted);font-weight:500}
+.menu-cat .dots{flex:1;border-bottom:2px dotted #d7cfb2;transform:translateY(-5px);min-width:16px}
+.menu-cat .yen{font-weight:900;white-space:nowrap;font-variant-numeric:tabular-nums}
+.menu-cat .tag{margin-left:6px;font-size:11px;background:var(--red);color:#fff;padding:1px 6px;border-radius:4px;vertical-align:2px}
+.menu-notes{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px}
+.menu-notes div{background:var(--yellow-soft);border-radius:16px;padding:18px 20px}
+.menu-notes h4{margin:0 0 6px;font-size:16px}
+.menu-notes ul{margin:0;padding-left:1.2em}
+.menu-notes li{margin:2px 0}
+.menu-meta{text-align:center;color:var(--muted);font-size:14px;margin-top:20px}
+.menu-meta a{font-weight:700;color:var(--red)}
+@media (max-width:640px){.menu-notes{grid-template-columns:1fr}.menu-cat{padding:16px 16px}}
+
+/* bulk */
+.bulk{background:var(--red);color:#fff;padding:56px 0}
+.bulk .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.bulk h2{margin:0;font-size:clamp(26px,4vw,36px);line-height:1.3}
+.bulk p{margin:8px 0 0;font-weight:700}
+.bulk .btn{background:var(--yellow);color:var(--ink)}
+
+/* recruit */
+.recruit-box{display:grid;grid-template-columns:1fr 1.3fr;gap:0;background:#fff;border:3px solid var(--ink);border-radius:24px;overflow:hidden;box-shadow:8px 8px 0 var(--ink)}
+.recruit-lead{background:var(--yellow);padding:32px 28px;display:flex;flex-direction:column;justify-content:center}
+.recruit-lead .pill{align-self:flex-start;background:var(--red);color:#fff;font-weight:900;border-radius:999px;padding:4px 14px;font-size:14px}
+.recruit-lead h3{margin:12px 0 8px;font-size:clamp(24px,3.4vw,32px);line-height:1.35}
+.recruit-lead p{margin:0;font-weight:700}
+.recruit-body{padding:28px}
+.recruit-body dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:0}
+.recruit-body dt,.recruit-body dd{padding:12px 0;border-bottom:1px dashed var(--line)}
+.recruit-body dt{font-weight:900;padding-right:18px;white-space:nowrap}
+.recruit-body dd{margin:0}
+.recruit-body .btn{margin-top:20px}
+.recruit-body small{display:block;margin-top:12px;color:var(--muted)}
+@media (max-width:760px){.recruit-box{grid-template-columns:1fr}.recruit-body dl{grid-template-columns:1fr}.recruit-body dt{border-bottom:0;padding-bottom:0}}
+
+/* instagram */
+.insta{background:var(--yellow-soft);padding:56px 0}
+.insta .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.insta h2{margin:0;font-size:clamp(22px,3.4vw,30px);line-height:1.35}
+.insta p{margin:6px 0 0;color:var(--muted);font-weight:700}
+.btn-insta{background:linear-gradient(45deg,#f9a03f,#e1306c 50%,#833ab4);color:#fff}
+
+/* access */
+.access-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:28px;align-items:start}
+.info-table{width:100%;border-collapse:collapse;background:#fff;border-radius:18px;overflow:hidden;border:2px solid var(--line)}
+.info-table th,.info-table td{padding:14px 16px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+.info-table tr:last-child th,.info-table tr:last-child td{border-bottom:0}
+.info-table th{width:7.5em;background:var(--yellow-soft);font-weight:900}
+.info-table td a{font-weight:900;color:var(--red);text-decoration:none}
+.info-table td a.big{font-size:20px}
+.today{display:inline-block;margin-top:4px;font-size:13px;font-weight:900;padding:2px 10px;border-radius:999px;background:#e7f6e7;color:var(--green)}
+.today.closed{background:#f3eee0;color:var(--muted)}
+.map{border:3px solid var(--ink);border-radius:18px;overflow:hidden;aspect-ratio:4/3;background:#eee}
+.map iframe{width:100%;height:100%;border:0;display:block}
+.map-link{display:inline-block;margin-top:10px;font-weight:700;color:var(--red)}
+@media (max-width:860px){.access-grid{grid-template-columns:1fr}.info-table th{width:6.5em}}
+
+footer{background:var(--ink);color:#d9d2bf;text-align:center;padding:36px 16px 96px;font-size:14px}
+footer .brand{font-family:"Dela Gothic One",sans-serif;color:#fff;font-size:28px;display:block;margin-bottom:6px}
+footer a{color:var(--yellow);font-weight:700}
+
+/* mobile sticky call */
+.call-bar{display:none}
+@media (max-width:760px){
+  .call-bar{
+    display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;
+    background:var(--red);color:#fff;border:3px solid var(--ink);border-radius:16px;
+    justify-content:center;align-items:center;gap:8px;padding:12px;font-weight:900;font-size:17px;text-decoration:none;
+    box-shadow:0 6px 18px rgba(0,0,0,.25)
+  }
+  .call-bar svg{width:20px;height:20px}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-tel" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></symbol>
+  <symbol id="i-insta" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></g><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></symbol>
+</svg>
+
+<div class="notice" role="note" data-i18n-html="notice"><b>※このページは常連客が作成した提案用のサンプルです。</b>お店の公式サイトではありません。</div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="お弁当 故里"><small data-i18n="logoSmall">お弁当</small><span>故里</span></a>
+    <nav aria-label="Menu">
+      <ul>
+        <li><a href="#popular" data-i18n="navPopular">人気メニュー</a></li>
+        <li><a href="#menu" data-i18n="navMenu">メニュー</a></li>
+        <li><a href="#bulk" data-i18n="navBulk">大量注文</a></li>
+        <li><a href="#recruit" data-i18n="navRecruit">採用情報</a></li>
+        <li><a href="#access" data-i18n="navAccess">店舗情報</a></li>
+      </ul>
+    </nav>
+    <div class="head-right">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="ja" lang="ja" aria-pressed="true">日本語</button>
+        <button type="button" data-lang="zh" lang="zh" aria-pressed="false">中文</button>
+        <button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="tel-btn" href="tel:0222221697" aria-label="022-222-1697">
+        <svg aria-hidden="true"><use href="#i-tel"/></svg>
+        <span class="num">022-222-1697</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <span class="kicker" data-i18n="kicker">川内の手作りお弁当屋さん</span>
+        <h1><span class="ruby" data-i18n="ruby">ふるさと</span>お弁当 故里</h1>
+        <p class="lead" data-i18n-html="lead">看板メニューは<strong>サックサク・ジューシーな唐揚げ！</strong><br>ボリューム満点のお弁当を、毎日できたてで。</p>
+        <div class="hero-cta">
+          <a class="btn btn-red" href="tel:0222221697">
+            <svg aria-hidden="true"><use href="#i-tel"/></svg>
+            <span data-i18n="ctaCall">電話で注文する</span>
+          </a>
+          <a class="btn btn-white" href="#menu" data-i18n="ctaMenu">メニューを見る</a>
+        </div>
+        <ul class="hero-points">
+          <li data-i18n="ptHours">🕤 9:30〜20:30</li>
+          <li data-i18n="ptOpen">📅 年中無休</li>
+          <li data-i18n="ptAccess">🚇 川内駅・東北大学からすぐ</li>
+        </ul>
+      </div>
+      <div class="hero-photo">
+        <img src="images/karaage-futsu.jpg" alt="" width="1200" height="1179" data-i18n-alt="altFutsu">
+        <div class="badge"><span><span data-i18n="badgeTop">人気</span><b>No.1</b></span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- POPULAR -->
+  <section id="popular">
+    <div class="wrap">
+      <div class="sec-title">
+        <span class="en">POPULAR</span>
+        <h2 class="display" data-i18n="popTitle">人気メニュー</h2>
+        <p data-i18n="popSub">迷ったらまずはコレ！ 故里の唐揚げ弁当は、14種類の味から選べます。</p>
+      </div>
+      <div class="popular-grid">
+        <article class="pop-card">
+          <figure><img src="images/karaage-futsu.jpg" alt="" loading="lazy" data-i18n-alt="altFutsu"><span class="rank no1" data-i18n="rank1">人気No.1</span></figure>
+          <div class="pop-body">
+            <h3 data-i18n="p1Name">唐揚げ弁当 普通</h3>
+            <p data-i18n="p1Desc">外はサックサク、中はジューシー。まずはこの定番の味から。</p>
+            <span class="price">670<small data-i18n="yenTax">円（税込）</small></span>
+          </div>
+        </article>
+        <article class="pop-card">
+          <figure><img src="images/karaage-asian.jpg" alt="" loading="lazy" data-i18n-alt="altAsian"><span class="rank" data-i18n="rank3">人気トップ3</span></figure>
+          <div class="pop-body">
+            <h3 data-i18n="p2Name">アジアン唐揚げ弁当</h3>
+            <p data-i18n="p2Desc">甘辛だれにたっぷりのネギとゴマ。ご飯がすすむ味。</p>
+            <span class="price">670<small data-i18n="yenTax">円（税込）</small></span>
+          </div>
+        </article>
+        <article class="pop-card">
+          <figure><img src="images/karaage-wasabi.jpg" alt="" loading="lazy" data-i18n-alt="altWasabi"><span class="rank" data-i18n="rank3">人気トップ3</span></figure>
+          <div class="pop-body">
+            <h3 data-i18n="p3Name">わさび唐揚げ弁当</h3>
+            <p data-i18n="p3Desc">まろやかなわさびマヨソースがクセになる、ツンとさわやかな一品。</p>
+            <span class="price">670<small data-i18n="yenTax">円（税込）</small></span>
+          </div>
+        </article>
+      </div>
+
+      <div class="flavors">
+        <h3 data-i18n="flvTitle">唐揚げは 14種類の味から選べる！</h3>
+        <p data-i18n="flvSub">唐揚げ弁当・唐揚げおかず・唐揚げ弁当ミニで選べます</p>
+        <ul class="chips" id="flavor-chips"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="features" id="about">
+    <div class="wrap">
+      <div class="sec-title">
+        <span class="en">ABOUT</span>
+        <h2 class="display" data-i18n="aboutTitle">故里のこだわり</h2>
+        <p data-i18n="aboutSub">学生さんから地域のみなさんまで。毎日食べたくなるお弁当を作っています。</p>
+      </div>
+      <div class="store">
+        <figure>
+          <img src="images/storefront.jpg" alt="" width="1000" height="750" loading="lazy" data-i18n-alt="altStore">
+          <figcaption data-i18n="storeCap">川内三十人町・ハッピー館1階</figcaption>
+        </figure>
+        <div>
+          <h3 data-i18n="storeTitle">黄色い看板が目印！</h3>
+          <p data-i18n="storeP1">川内の坂道沿い、黄色い大きな看板のお店が「お弁当 故里」です。</p>
+          <p data-i18n="storeP2">講義の合間や部活帰り、お仕事のお昼ごはんに。気軽に立ち寄れる街のお弁当屋さんです。</p>
+        </div>
+      </div>
+      <div class="feat-grid">
+        <div class="feat">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2c1 3 4 4 4 8a4 4 0 0 1-8 0c0-2 1-3 1-3s0 2 2 2c0-3-1-5 1-7z"/><path d="M5 14a7 7 0 0 0 14 0"/></svg></div>
+          <h3 data-i18n="f1T">手作り・できたて</h3>
+          <p data-i18n="f1D">注文を受けてから心を込めて。あたたかいお弁当をお渡しします。</p>
+        </div>
+        <div class="feat">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11h18"/><path d="M4 11a8 8 0 0 0 16 0"/><path d="M8 7c0-1 1-2 2-2M12 6c0-1 1-2 2-2"/></svg></div>
+          <h3 data-i18n="f2T">ボリューム満点</h3>
+          <p data-i18n="f2D">お腹いっぱい食べてほしいから。ご飯の大盛・超大盛もOK。</p>
+        </div>
+        <div class="feat">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div>
+          <h3 data-i18n="f3T">川内駅・東北大すぐ</h3>
+          <p data-i18n="f3D">講義の合間やお昼休みにも。サッと立ち寄れる好立地です。</p>
+        </div>
+        <div class="feat">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></div>
+          <h3 data-i18n="f4T">年中無休</h3>
+          <p data-i18n="f4D">朝9:30から夜20:30まで、毎日営業しています。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu">
+    <div class="wrap">
+      <div class="sec-title">
+        <span class="en">MENU</span>
+        <h2 class="display" data-i18n="menuTitle">お品書き</h2>
+        <p data-i18n="menuSub">表示価格はすべて税込です。</p>
+      </div>
+
+      <div class="menu-tabs" role="group" id="menu-tabs"></div>
+      <div class="menu-grid" id="menu-grid"></div>
+
+      <div class="menu-notes">
+        <div>
+          <h4 data-i18n="nRiceT">🍚 ご飯大盛（全お弁当で可能）</h4>
+          <ul>
+            <li data-i18n="nRice1">大盛 ＋110円</li>
+            <li data-i18n="nRice2">超大盛 ＋180円</li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="nTopT">✨ ご飯へのトッピング</h4>
+          <ul>
+            <li data-i18n="nTop1">明太子 ＋110円</li>
+            <li data-i18n="nTop2">おかか ＋80円</li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="nSideT">🥡 おかずのみもOK</h4>
+          <ul>
+            <li data-i18n="nSide1">−140円でおかずのみに変更できます</li>
+            <li data-i18n="nSide2">（丼・カレー・のり弁は不可）</li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="nOrderT">📞 ご注文方法</h4>
+          <ul>
+            <li data-i18n="nOrder1">店頭またはお電話でご注文ください</li>
+            <li data-i18n-html="nOrder2">お支払いは<strong>現金のみ</strong>です</li>
+          </ul>
+        </div>
+      </div>
+      <p class="menu-meta"><span data-i18n="menuUpdated">2026年5月1日更新</span> ／ <a href="images/menu.jpg" target="_blank" rel="noopener" data-i18n="menuImg">メニュー表（画像）を見る</a></p>
+    </div>
+  </section>
+
+  <!-- BULK -->
+  <div class="bulk" id="bulk">
+    <div class="wrap">
+      <div>
+        <h2 class="display" data-i18n="bulkTitle">大量注文、承ります！</h2>
+        <p data-i18n-html="bulkP">部活・サークル・イベント・会議などのまとめ注文はお気軽にご相談ください。<br>ご予約はお電話で受け付けています。</p>
+      </div>
+      <a class="btn" href="tel:0222221697">
+        <svg aria-hidden="true"><use href="#i-tel"/></svg>
+        022-222-1697
+      </a>
+    </div>
+  </div>
+
+  <!-- RECRUIT -->
+  <section id="recruit">
+    <div class="wrap">
+      <div class="sec-title">
+        <span class="en">RECRUIT</span>
+        <h2 class="display" data-i18n="recTitle">採用情報</h2>
+      </div>
+      <div class="recruit-box">
+        <div class="recruit-lead">
+          <span class="pill" data-i18n="recPill">スタッフ募集中</span>
+          <h3 data-i18n-html="recHead">一緒においしい<br>お弁当を作りませんか？</h3>
+          <p data-i18n="recLead">学生さん・未経験の方も歓迎です。</p>
+        </div>
+        <div class="recruit-body">
+          <dl>
+            <dt data-i18n="recJobT">募集職種</dt><dd data-i18n="recJob">調理補助・販売・接客スタッフ（アルバイト／パート）</dd>
+            <dt data-i18n="recTimeT">勤務時間</dt><dd data-i18n="recTime">9:30〜20:30の間でシフト制（曜日・時間は応相談）</dd>
+            <dt data-i18n="recPlaceT">勤務地</dt><dd data-i18n="recPlace">お弁当 故里（仙台市青葉区川内三十人町44-11）</dd>
+            <dt data-i18n="recPayT">給与・待遇</dt><dd data-i18n="recPay">面接時にご説明します。お気軽にお問い合わせください。</dd>
+            <dt data-i18n="recHowT">応募方法</dt><dd data-i18n="recHow">お電話または店頭で「求人を見た」とお声がけください。</dd>
+          </dl>
+          <a class="btn btn-red" href="tel:0222221697">
+            <svg aria-hidden="true"><use href="#i-tel"/></svg>
+            <span data-i18n="recBtn">電話で応募する</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM -->
+  <div class="insta">
+    <div class="wrap">
+      <div>
+        <h2 class="display" data-i18n="igTitle">Instagramで最新情報を発信中！</h2>
+        <p data-i18n="igSub">新メニューや日替わり情報はこちらでチェック</p>
+      </div>
+      <a class="btn btn-insta" href="https://www.instagram.com/bento_furusato/" target="_blank" rel="noopener">
+        <svg aria-hidden="true"><use href="#i-insta"/></svg>
+        @bento_furusato
+      </a>
+    </div>
+  </div>
+
+  <!-- ACCESS -->
+  <section id="access">
+    <div class="wrap">
+      <div class="sec-title">
+        <span class="en">SHOP INFO</span>
+        <h2 class="display" data-i18n="accTitle">店舗情報・アクセス</h2>
+      </div>
+      <div class="access-grid">
+        <table class="info-table">
+          <tbody>
+            <tr><th data-i18n="tName">店名</th><td data-i18n="vName">お弁当 故里（ふるさと）</td></tr>
+            <tr><th data-i18n="tAddr">住所</th><td data-i18n-html="vAddr">〒980-0866<br>宮城県仙台市青葉区川内三十人町44-11 ハッピー館</td></tr>
+            <tr><th data-i18n="tAccess">アクセス</th><td data-i18n-html="vAccess">地下鉄東西線 川内駅・東北大学からすぐ<br>黄色い看板が目印です</td></tr>
+            <tr><th data-i18n="tTel">電話番号</th><td><a class="big" href="tel:0222221697">022-222-1697</a></td></tr>
+            <tr><th data-i18n="tHours">営業時間</th><td>9:30〜20:30<br><span class="today" id="today-status"></span></td></tr>
+            <tr><th data-i18n="tClosed">定休日</th><td data-i18n="vClosed">なし（年中無休）</td></tr>
+            <tr><th data-i18n="tBudget">ご予算</th><td data-i18n="vBudget">お一人様 〜1,000円</td></tr>
+            <tr><th data-i18n="tPay">お支払い</th><td data-i18n="vPay">現金のみ</td></tr>
+            <tr><th data-i18n="tOrder">ご注文</th><td data-i18n-html="vOrder">店頭・お電話<br>大量注文も承ります</td></tr>
+            <tr><th>Instagram</th><td><a href="https://www.instagram.com/bento_furusato/" target="_blank" rel="noopener">@bento_furusato</a></td></tr>
+          </tbody>
+        </table>
+        <div>
+          <div class="map">
+            <iframe title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=%E5%AE%AE%E5%9F%8E%E7%9C%8C%E4%BB%99%E5%8F%B0%E5%B8%82%E9%9D%92%E8%91%89%E5%8C%BA%E5%B7%9D%E5%86%85%E4%B8%89%E5%8D%81%E4%BA%BA%E7%94%BA44-11&output=embed"></iframe>
+          </div>
+          <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E3%81%8A%E5%BC%81%E5%BD%93%20%E6%95%85%E9%87%8C%20%E4%BB%99%E5%8F%B0%E5%B8%82%E9%9D%92%E8%91%89%E5%8C%BA%E5%B7%9D%E5%86%85%E4%B8%89%E5%8D%81%E4%BA%BA%E7%94%BA44-11" target="_blank" rel="noopener" data-i18n="mapLink">Googleマップで開く →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span class="brand">お弁当 故里</span>
+  <span data-i18n="ftAddr">宮城県仙台市青葉区川内三十人町44-11 ハッピー館</span><br>
+  TEL 022-222-1697 ／ <span data-i18n="ftHours">営業時間 9:30〜20:30（年中無休）</span><br>
+  <a href="https://www.instagram.com/bento_furusato/" target="_blank" rel="noopener">Instagram @bento_furusato</a>
+  <div style="margin-top:14px;font-size:12px;color:#9b937f">© お弁当 故里</div>
+</footer>
+
+<a class="call-bar" href="tel:0222221697">
+  <svg aria-hidden="true"><use href="#i-tel"/></svg>
+  <span data-i18n="callBar">電話で注文する</span> 022-222-1697
+</a>
+
+<script>
+/* ===== 翻訳（日本語はHTMLに直接書いてあるものを使用） ===== */
+var T = {
+  zh: {
+    _title: "故里便当（Furusato）｜仙台·川内的手作炸鸡块便当",
+    _desc: "位于仙台市青叶区川内的手作便当店「故里便当」。招牌菜是炸鸡块便当！距川内站·东北大学步行即到。可到店或电话点餐，也承接社团和活动的大量订单。营业时间 9:30〜20:30，全年无休。",
+    notice: "<b>※本页面是由常客制作的提案用样本。</b>并非店铺的官方网站。",
+    logoSmall: "便当", navPopular: "人气菜单", navMenu: "菜单", navBulk: "大量订购", navRecruit: "招聘信息", navAccess: "店铺信息",
+    kicker: "川内的手作便当店", ruby: "Furusato · 故里便当",
+    lead: "招牌菜是<strong>外酥里嫩、多汁的炸鸡块！</strong><br>分量十足的便当，每天现做。",
+    ctaCall: "电话点餐", ctaMenu: "查看菜单",
+    ptHours: "🕤 9:30〜20:30", ptOpen: "📅 全年无休", ptAccess: "🚇 川内站·东北大学步行即到",
+    badgeTop: "人气",
+    popTitle: "人气菜单", popSub: "不知道选什么就选它！故里的炸鸡块便当有14种口味可选。",
+    rank1: "人气No.1", rank3: "人气前三",
+    p1Name: "炸鸡块便当 原味", p1Desc: "外酥里嫩，鲜嫩多汁。先从这款经典口味开始吧。",
+    p2Name: "亚洲风味炸鸡块便当", p2Desc: "甜辣酱汁配上满满的葱花和芝麻，超级下饭。",
+    p3Name: "芥末炸鸡块便当", p3Desc: "温和的芥末蛋黄酱让人上瘾，清爽微呛的一款。",
+    yenTax: "日元（含税）",
+    flvTitle: "炸鸡块有14种口味可选！", flvSub: "炸鸡块便当·炸鸡块单点·迷你炸鸡块便当均可选择口味",
+    aboutTitle: "故里的坚持", aboutSub: "从学生到附近的居民，我们制作让人每天都想吃的便当。",
+    storeCap: "川内三十人町·Happy馆1楼", storeTitle: "认准黄色招牌！",
+    storeP1: "沿着川内的坡道，挂着黄色大招牌的就是「故里便当」。",
+    storeP2: "课间、社团活动后或工作午餐都很合适。是一家可以随时顺路光顾的街坊便当店。",
+    f1T: "手工制作·现做现卖", f1D: "接单后用心制作，把热乎乎的便当交到您手中。",
+    f2T: "分量十足", f2D: "希望您吃得饱饱的。米饭可加大或超大份。",
+    f3T: "川内站·东北大学旁", f3D: "课间或午休时都能快速顺路购买。",
+    f4T: "全年无休", f4D: "每天早上9:30至晚上20:30营业。",
+    menuTitle: "菜单", menuSub: "所有价格均含税。",
+    nRiceT: "🍚 米饭加量（所有便当均可）", nRice1: "大份 ＋110日元", nRice2: "超大份 ＋180日元",
+    nTopT: "✨ 米饭配料", nTop1: "明太子 ＋110日元", nTop2: "木鱼花 ＋80日元",
+    nSideT: "🥡 也可只要菜（不要米饭）", nSide1: "减140日元即可改为只要菜", nSide2: "（盖饭·咖喱·海苔便当除外）",
+    nOrderT: "📞 点餐方式", nOrder1: "请到店或电话点餐", nOrder2: "<strong>仅限现金</strong>支付",
+    menuUpdated: "2026年5月1日更新", menuImg: "查看菜单原图（日文）",
+    bulkTitle: "承接大量订购！", bulkP: "社团、活动、会议等批量订购，欢迎随时咨询。<br>请电话预约。",
+    recTitle: "招聘信息", recPill: "招聘员工中", recHead: "要不要和我们一起<br>制作美味的便当？", recLead: "欢迎学生及无经验者。",
+    recJobT: "招聘职位", recJob: "厨房助理·销售·接待（兼职 Arbeit／Part）",
+    recTimeT: "工作时间", recTime: "9:30〜20:30之间轮班制（星期和时间可商量）",
+    recPlaceT: "工作地点", recPlace: "故里便当（仙台市青叶区川内三十人町44-11）",
+    recPayT: "薪资待遇", recPay: "面试时详细说明，欢迎咨询。",
+    recHowT: "应聘方式", recHow: "请致电或到店告知「看到了招聘信息」。※需能用日语进行基本沟通",
+    recBtn: "电话应聘",
+    igTitle: "在Instagram发布最新消息！", igSub: "新菜单和每日信息请在这里查看",
+    accTitle: "店铺信息·交通",
+    tName: "店名", vName: "故里便当（お弁当 故里 / Furusato）",
+    tAddr: "地址", vAddr: "〒980-0866<br>宫城县仙台市青叶区川内三十人町44-11 Happy馆",
+    tAccess: "交通", vAccess: "地铁东西线 川内站·东北大学步行即到<br>认准黄色招牌",
+    tTel: "电话", tHours: "营业时间", tClosed: "休息日", vClosed: "无（全年无休）",
+    tBudget: "人均消费", vBudget: "每人 〜1,000日元", tPay: "支付方式", vPay: "仅限现金",
+    tOrder: "点餐", vOrder: "到店·电话<br>承接大量订购",
+    mapLink: "在Google地图中打开 →",
+    ftAddr: "宫城县仙台市青叶区川内三十人町44-11 Happy馆", ftHours: "营业时间 9:30〜20:30（全年无休）",
+    callBar: "电话点餐",
+    altFutsu: "堆得满满的炸鸡块便当（原味）", altAsian: "亚洲风味炸鸡块便当", altWasabi: "芥末炸鸡块便当", altStore: "故里便当的店面，黄色招牌",
+    openNow: "● 正在营业", closedNow: "准备中（9:30开始营业）", allCat: "全部"
+  },
+  en: {
+    _title: "Bento Furusato | Homemade Karaage Bento in Kawauchi, Sendai",
+    _desc: "Bento Furusato is a homemade bento shop in Kawauchi, Aoba-ku, Sendai. Our signature dish is karaage (Japanese fried chicken)! Steps from Kawauchi Station and Tohoku University. Order in store or by phone. Large orders welcome. Open 9:30–20:30, every day.",
+    notice: "<b>Note: This is a sample site made by a regular customer as a proposal.</b> It is not the shop's official website.",
+    logoSmall: "Bento", navPopular: "Popular", navMenu: "Menu", navBulk: "Large Orders", navRecruit: "Jobs", navAccess: "Shop Info",
+    kicker: "Homemade bento in Kawauchi", ruby: "FURUSATO BENTO",
+    lead: "Our signature dish: <strong>crispy, juicy karaage fried chicken!</strong><br>Hearty bento boxes, freshly made every day.",
+    ctaCall: "Order by Phone", ctaMenu: "See the Menu",
+    ptHours: "🕤 9:30–20:30", ptOpen: "📅 Open every day", ptAccess: "🚇 Near Kawauchi Sta. & Tohoku Univ.",
+    badgeTop: "Best Seller",
+    popTitle: "Popular Picks", popSub: "Not sure what to get? Start here! Our karaage bento comes in 14 flavors.",
+    rank1: "No.1 Best Seller", rank3: "Top 3",
+    p1Name: "Karaage Bento – Original", p1Desc: "Crispy outside, juicy inside. Start with our classic flavor.",
+    p2Name: "Asian Karaage Bento", p2Desc: "Sweet and savory sauce topped with green onion and sesame. Perfect with rice.",
+    p3Name: "Wasabi Karaage Bento", p3Desc: "A creamy wasabi mayo sauce with a refreshing kick. Seriously addictive.",
+    yenTax: "yen (tax incl.)",
+    flvTitle: "Choose from 14 karaage flavors!", flvSub: "Available for Karaage Bento, Karaage (side only) and Mini Karaage Bento",
+    aboutTitle: "What We Care About", aboutSub: "From students to neighbors, we make bento you'll want to eat every day.",
+    storeCap: "1F Happy-kan, Kawauchi Sanjuninmachi", storeTitle: "Look for the yellow sign!",
+    storeP1: "On the slope in Kawauchi, the shop with the big yellow sign is Bento Furusato.",
+    storeP2: "Between classes, after club practice, or for a work lunch — a friendly neighborhood bento shop you can drop by anytime.",
+    f1T: "Homemade & Fresh", f1D: "Made with care after you order, and handed to you warm.",
+    f2T: "Big Portions", f2D: "We want you to leave full. Large and extra-large rice available.",
+    f3T: "Near Kawauchi Sta.", f3D: "Right by Tohoku University — easy to grab between classes or at lunch.",
+    f4T: "Open Every Day", f4D: "Open daily from 9:30 a.m. to 8:30 p.m.",
+    menuTitle: "Menu", menuSub: "All prices include tax.",
+    nRiceT: "🍚 Extra Rice (any bento)", nRice1: "Large +110 yen", nRice2: "Extra large +180 yen",
+    nTopT: "✨ Rice Toppings", nTop1: "Mentaiko (spicy cod roe) +110 yen", nTop2: "Okaka (bonito flakes) +80 yen",
+    nSideT: "🥡 Side Dish Only", nSide1: "Get the side dish without rice for 140 yen off", nSide2: "(Not available for rice bowls, curry or nori bento)",
+    nOrderT: "📞 How to Order", nOrder1: "Order in store or by phone", nOrder2: "<strong>Cash only</strong>",
+    menuUpdated: "Updated May 1, 2026", menuImg: "View the original menu (Japanese)",
+    bulkTitle: "Large Orders Welcome!", bulkP: "Ordering for a club, circle, event or meeting? Feel free to ask.<br>Please reserve by phone.",
+    recTitle: "Jobs", recPill: "We're Hiring", recHead: "Want to make<br>great bento with us?", recLead: "Students and beginners welcome.",
+    recJobT: "Position", recJob: "Kitchen assistant / sales / counter staff (part-time)",
+    recTimeT: "Hours", recTime: "Shifts between 9:30–20:30 (days and hours negotiable)",
+    recPlaceT: "Location", recPlace: "Bento Furusato (44-11 Kawauchi Sanjuninmachi, Aoba-ku, Sendai)",
+    recPayT: "Pay & Benefits", recPay: "Explained at the interview. Feel free to ask.",
+    recHowT: "How to Apply", recHow: "Call us or tell us in store that you saw the job posting. *Basic Japanese conversation required",
+    recBtn: "Apply by Phone",
+    igTitle: "Follow us on Instagram!", igSub: "Check here for new menu items and daily specials",
+    accTitle: "Shop Info & Access",
+    tName: "Name", vName: "Bento Furusato (お弁当 故里)",
+    tAddr: "Address", vAddr: "Happy-kan, 44-11 Kawauchi Sanjuninmachi,<br>Aoba-ku, Sendai, Miyagi 980-0866",
+    tAccess: "Access", vAccess: "Steps from Kawauchi Sta. (Subway Tozai Line) and Tohoku University<br>Look for the yellow sign",
+    tTel: "Phone", tHours: "Hours", tClosed: "Closed", vClosed: "Never — open every day",
+    tBudget: "Budget", vBudget: "Up to ¥1,000 per person", tPay: "Payment", vPay: "Cash only",
+    tOrder: "Ordering", vOrder: "In store or by phone<br>Large orders welcome",
+    mapLink: "Open in Google Maps →",
+    ftAddr: "Happy-kan, 44-11 Kawauchi Sanjuninmachi, Aoba-ku, Sendai, Miyagi", ftHours: "Open 9:30–20:30 (every day)",
+    callBar: "Order by Phone",
+    altFutsu: "A heaping karaage bento (original flavor)", altAsian: "Asian karaage bento", altWasabi: "Wasabi karaage bento", altStore: "Bento Furusato storefront with its yellow sign",
+    openNow: "● Open now", closedNow: "Closed now (opens at 9:30)", allCat: "All"
+  },
+  ja: {
+    altFutsu: "山盛りの唐揚げ弁当（普通）", altAsian: "アジアン唐揚げ弁当", altWasabi: "わさび唐揚げ弁当", altStore: "黄色い看板が目印の、お弁当 故里の外観",
+    openNow: "● ただいま営業中", closedNow: "準備中（9:30から営業）", allCat: "すべて"
+  }
+};
+
+/* ===== メニュー（[日本語, 中文, English, 価格, 補足{ja,zh,en}]） ===== */
+var FLAVORS = [
+  ["普通","原味","Original",1],["マヨ明太","明太子蛋黄酱","Mayo Mentaiko",1],["アジアン","亚洲风味","Asian",1],["わさび","芥末","Wasabi",1],["塩","盐味","Salt",1],
+  ["しょうが","生姜","Ginger"],["あっさり","清淡","Light"],["ピリ辛","微辣","Mildly Spicy"],["しそ","紫苏","Shiso"],["ハニーマスタード","蜂蜜芥末","Honey Mustard"],
+  ["塩レモン","盐柠檬","Salt Lemon"],["トマトガーリック","番茄蒜香","Tomato Garlic"],["みそだれ","味噌酱","Miso Sauce"],["スパイシー","香辣","Spicy"]
+];
+function flavorNote(i){ return FLAVORS.map(function(f){return f[i]}).join(i===2 ? ", " : "・"); }
+var CHOOSE = {ja:"味を選択", zh:"可选口味", en:"choose a flavor"};
+var MENU = [
+  {id:"karaage", name:["からあげ","炸鸡块","Karaage"], items:[
+    ["唐揚げ弁当","炸鸡块便当","Karaage Bento",670,{ja:flavorNote(0),zh:flavorNote(1),en:flavorNote(2)},true],
+    ["唐揚げおかず","炸鸡块（单点·无米饭）","Karaage (side only, no rice)",510,CHOOSE],
+    ["唐揚げ弁当ミニ","迷你炸鸡块便当","Mini Karaage Bento",550,CHOOSE],
+    ["唐揚げ明太子弁当","炸鸡块明太子便当","Karaage & Mentaiko Bento",760]
+  ]},
+  {id:"noriben", name:["のり弁","海苔便当","Nori Bento"], items:[
+    ["のり弁当","海苔便当","Nori Bento",521],
+    ["のり明太子弁当","海苔明太子便当","Nori Mentaiko Bento",580,{ja:"おかかが明太に",zh:"木鱼花换成明太子",en:"mentaiko instead of bonito flakes"}],
+    ["のり唐揚げ弁当","海苔炸鸡块便当","Nori Karaage Bento",670],
+    ["のり唐揚げ明太子弁当","海苔炸鸡块明太子便当","Nori Karaage & Mentaiko Bento",740],
+    ["特製のり弁当","特制海苔便当","Special Nori Bento",650,{ja:"とんかつ",zh:"配炸猪排",en:"with tonkatsu"}]
+  ]},
+  {id:"hamburg", name:["ハンバーグ","汉堡肉","Hamburg Steak"], items:[
+    ["ハンバーグ弁当","汉堡肉便当","Hamburg Steak Bento",620],
+    ["和風ハンバーグ弁当","和风汉堡肉便当","Japanese-style Hamburg Bento",620,{ja:"おろしだれ",zh:"萝卜泥酱汁",en:"grated daikon sauce"}],
+    ["とり唐ハンバーグ弁当","炸鸡块汉堡肉便当","Karaage & Hamburg Bento",780],
+    ["あっさりとり唐ハンバーグ弁当","清淡炸鸡块汉堡肉便当","Light Karaage & Hamburg Bento",780]
+  ]},
+  {id:"tonkatsu", name:["とんかつ","炸猪排","Tonkatsu"], items:[
+    ["とんかつ弁当","炸猪排便当","Tonkatsu Bento",730],
+    ["おろしとんかつ弁当","萝卜泥炸猪排便当","Oroshi Tonkatsu Bento",730,{ja:"おろしだれ",zh:"萝卜泥酱汁",en:"grated daikon sauce"}],
+    ["ねぎ塩とんかつ弁当","葱盐炸猪排便当","Negi-Shio Tonkatsu Bento",730,{ja:"ネギ塩だれ",zh:"葱盐酱汁",en:"green onion & salt sauce"}],
+    ["ジャンボチキンカツ弁当","巨无霸炸鸡排便当","Jumbo Chicken Katsu Bento",780]
+  ]},
+  {id:"itame", name:["炒め物","炒菜","Stir-fry"], items:[
+    ["肉野菜炒め弁当","肉炒蔬菜便当","Stir-fried Meat & Veggie Bento",780],
+    ["焼き肉弁当","烤肉便当","Yakiniku Bento",780,{ja:"みそ・塩・スパイシー",zh:"味噌·盐味·香辣",en:"miso, salt or spicy"}],
+    ["ホルモン炒め弁当","炒内脏便当","Stir-fried Horumon (Offal) Bento",780,{ja:"みそ・塩",zh:"味噌·盐味",en:"miso or salt"}],
+    ["お好み弁当","自选便当","Okonomi Bento",650,{ja:"お肉のみ（みそ・塩・しょうゆ・スパイシー）",zh:"仅肉（味噌·盐味·酱油·香辣）",en:"meat only (miso, salt, soy sauce or spicy)"}],
+    ["ニラレバ弁当","韭菜炒猪肝便当","Liver & Garlic Chives Bento",790],
+    ["ロースしょうが焼き弁当","姜烧猪里脊便当","Ginger Pork Loin Bento",750],
+    ["野菜炒め弁当","炒蔬菜便当","Stir-fried Veggie Bento",620],
+    ["スパイシー野菜炒め弁当","香辣炒蔬菜便当","Spicy Stir-fried Veggie Bento",620]
+  ]},
+  {id:"curry", name:["カレー","咖喱","Curry"], items:[
+    ["ハンバーグカレー","汉堡肉咖喱","Hamburg Curry",730],
+    ["唐揚げカレー","炸鸡块咖喱","Karaage Curry",730],
+    ["エビカレー","炸虾咖喱","Shrimp Curry",770],
+    ["カツカレー","炸猪排咖喱","Katsu Curry",730],
+    ["カレー","咖喱饭","Curry",560],
+    ["ピリ辛カレー","微辣咖喱","Spicy Curry",560],
+    ["ジャンボチキンカレー","巨无霸鸡排咖喱","Jumbo Chicken Curry",780]
+  ]},
+  {id:"fish", name:["魚","海鲜","Seafood"], items:[
+    ["カキフライ弁当","炸牡蛎便当","Fried Oyster Bento",750],
+    ["アジフライ弁当","炸竹荚鱼便当","Fried Horse Mackerel Bento",750],
+    ["白身魚フライ弁当","炸白身鱼便当","Fried White Fish Bento",720],
+    ["白身魚とカキフライミックス","炸白身鱼和炸牡蛎拼盘","White Fish & Oyster Fry Mix",750],
+    ["さけ弁当","三文鱼便当","Salmon Bento",570],
+    ["エビフライ弁当","炸虾便当","Fried Shrimp Bento",750],
+    ["エビとり唐ミックス弁当","炸虾炸鸡块拼盘便当","Shrimp & Karaage Mix Bento",780],
+    ["エビハンバーグ弁当","炸虾汉堡肉便当","Shrimp & Hamburg Bento",780]
+  ]},
+  {id:"don", name:["丼","盖饭","Rice Bowls"], items:[
+    ["からマヨ丼","炸鸡蛋黄酱盖饭","Karaage Mayo Bowl",730],
+    ["とりめし弁当","鸡肉饭便当","Torimeshi (Chicken Rice) Bento",700],
+    ["豚塩丼","盐味猪肉盖饭","Salt Pork Bowl",680],
+    ["豚キムチ丼","泡菜猪肉盖饭","Pork Kimchi Bowl",780],
+    ["焼肉丼","烤肉盖饭","Yakiniku Bowl",780],
+    ["カツ丼","炸猪排盖饭","Katsudon (Pork Cutlet Bowl)",760],
+    ["とろ〜りチーズ丼","浓郁芝士盖饭","Melty Cheese Bowl",560],
+    ["とり玉丼","鸡肉滑蛋盖饭","Chicken & Egg Bowl",760],
+    ["とり玉チーズ丼","芝士鸡肉滑蛋盖饭","Chicken, Egg & Cheese Bowl",780],
+    ["玉子丼","滑蛋盖饭","Egg Bowl",460],
+    ["ちくわ丼","竹轮盖饭","Chikuwa (Fish Cake) Bowl",490],
+    ["かき揚げ丼","什锦天妇罗盖饭","Kakiage Tempura Bowl",560],
+    ["他人丼","猪肉滑蛋盖饭","Tanin-don (Pork & Egg Bowl)",760],
+    ["ポークマヨかけ丼","猪肉蛋黄酱盖饭","Pork Mayo Bowl",650],
+    ["マーボーなす丼","麻婆茄子盖饭","Mapo Eggplant Bowl",741],
+    ["ジャンボチキンカツ丼","巨无霸炸鸡排盖饭","Jumbo Chicken Katsu Bowl",780]
+  ]},
+  {id:"tatsuta", name:["竜田","龙田炸鸡","Tatsuta-age"], items:[
+    ["竜田弁当","龙田炸鸡便当","Tatsuta Fried Chicken Bento",720],
+    ["おろし竜田弁当","萝卜泥龙田炸鸡便当","Tatsuta Bento with Grated Daikon",720]
+  ]},
+  {id:"other", name:["その他","其他","Others"], items:[
+    ["日替わり幕の内弁当","每日更换幕之内便当","Daily Makunouchi Bento",700],
+    ["メンチカツ弁当","炸肉饼便当","Menchi Katsu Bento",720],
+    ["かきあげ弁当","什锦天妇罗便当","Kakiage Tempura Bento",560],
+    ["スペシャル弁当","特别便当","Special Bento",850]
+  ]}
+];
+var LI = {ja:0, zh:1, en:2};
+function price(n, lang){ return lang === "en" ? "¥" + n : lang === "zh" ? n + "日元" : n + "円"; }
+function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+
+var current = "ja", filter = "all";
+
+function renderMenu(lang){
+  var i = LI[lang];
+  var tabs = '<button type="button" data-filter="all" aria-pressed="' + (filter === "all") + '">' + esc(T[lang].allCat) + '</button>';
+  var grid = "";
+  MENU.forEach(function(cat){
+    tabs += '<button type="button" data-filter="' + cat.id + '" aria-pressed="' + (filter === cat.id) + '">' + esc(cat.name[i]) + '</button>';
+    grid += '<div class="menu-cat"' + (filter === "all" || filter === cat.id ? "" : " hidden") + '><h3>' + esc(cat.name[i]) + '</h3><ul>';
+    cat.items.forEach(function(it){
+      grid += '<li><span class="name">' + esc(it[i]) + (it[5] ? '<span class="tag">' + esc(T[lang].badgeTop || "人気") + '</span>' : "") +
+        (lang !== "ja" ? '<span class="sub" lang="ja">' + esc(it[0]) + '</span>' : "") +
+        (it[4] ? '<span class="note">' + esc(it[4][lang]) + '</span>' : "") +
+        '</span><span class="dots"></span><span class="yen">' + price(it[3], lang) + '</span></li>';
+    });
+    grid += '</ul></div>';
+  });
+  document.getElementById("menu-tabs").innerHTML = tabs;
+  document.getElementById("menu-grid").innerHTML = grid;
+  document.getElementById("flavor-chips").innerHTML = FLAVORS.map(function(f){
+    return '<li' + (f[3] ? ' class="hot"' : "") + '>' + esc(f[i]) + '</li>';
+  }).join("");
+}
+
+document.getElementById("menu-tabs").addEventListener("click", function(e){
+  var b = e.target.closest("button"); if (!b) return;
+  filter = b.dataset.filter; renderMenu(current);
+});
+
+/* 日本語の原文を保存 */
+var JA = {_title: document.title, _desc: document.querySelector('meta[name="description"]').content};
+document.querySelectorAll("[data-i18n]").forEach(function(el){ JA[el.dataset.i18n] = el.textContent; });
+document.querySelectorAll("[data-i18n-html]").forEach(function(el){ JA[el.dataset.i18nHtml] = el.innerHTML; });
+Object.keys(JA).forEach(function(k){ if (!(k in T.ja)) T.ja[k] = JA[k]; });
+T.ja.badgeTop = "人気";
+
+function updateStatus(lang){
+  var el = document.getElementById("today-status");
+  var now = new Date(new Date().toLocaleString("en-US", {timeZone: "Asia/Tokyo"}));
+  var m = now.getHours() * 60 + now.getMinutes();
+  var open = m >= 9 * 60 + 30 && m < 20 * 60 + 30;
+  el.textContent = open ? T[lang].openNow : T[lang].closedNow;
+  el.classList.toggle("closed", !open);
+}
+
+function setLang(lang){
+  if (!T[lang]) lang = "ja";
+  current = lang;
+  var d = T[lang];
+  document.documentElement.lang = lang === "zh" ? "zh-Hans" : lang;
+  document.title = d._title;
+  document.querySelector('meta[name="description"]').content = d._desc;
+  document.querySelectorAll("[data-i18n]").forEach(function(el){ if (d[el.dataset.i18n] != null) el.textContent = d[el.dataset.i18n]; });
+  document.querySelectorAll("[data-i18n-html]").forEach(function(el){ if (d[el.dataset.i18nHtml] != null) el.innerHTML = d[el.dataset.i18nHtml]; });
+  document.querySelectorAll("[data-i18n-alt]").forEach(function(el){ el.alt = d[el.dataset.i18nAlt] || ""; });
+  document.querySelectorAll(".lang button").forEach(function(b){ b.setAttribute("aria-pressed", b.dataset.lang === lang); });
+  renderMenu(lang);
+  updateStatus(lang);
+  try { localStorage.setItem("furusato-lang", lang); } catch (e) {}
+}
+
+document.querySelectorAll(".lang button").forEach(function(b){
+  b.addEventListener("click", function(){
+    setLang(b.dataset.lang);
+    try { history.replaceState(null, "", "?lang=" + b.dataset.lang + location.hash); } catch (e) {}
+  });
+});
+
+/* 言語の決定：URL ?lang= → 前回の選択 → ブラウザの言語 */
+(function(){
+  var q = new URLSearchParams(location.search).get("lang");
+  var saved = null; try { saved = localStorage.getItem("furusato-lang"); } catch (e) {}
+  var nav = (navigator.language || "ja").toLowerCase();
+  var guess = nav.indexOf("ja") === 0 ? "ja" : nav.indexOf("zh") === 0 ? "zh" : "en";
+  setLang(q || saved || guess);
+})();
+</script>
+</body>
+</html>
